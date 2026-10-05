@@ -1,0 +1,13 @@
+# Python 3.12. Versions used for the results in the paper.
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.16.0
+scikit-learn==1.7.0
+xgboost==3.1.2
+gpboost==1.6.6
+matplotlib==3.9.2
+
+# The INLA competitor runs in R (4.4.3), not installed by pip:
+#   INLA (24.12.11)   install.packages("INLA", repos = c(INLA = "https://inla.r-inla-download.org/R/stable"))
+#   dplyr, jsonlite   simulation study
+#   sf, spData        house-price data preparation

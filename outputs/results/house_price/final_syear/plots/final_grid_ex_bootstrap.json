@@ -1,0 +1,31 @@
+{
+  "variant": "ex (main-table)",
+  "per_fold_SAMBoost_ex": {
+    "1996": 0.2462440517268531,
+    "1997": 0.2385369769064517,
+    "1998": 0.24684574021337688
+  },
+  "pooled_rmse": {
+    "SAMBoost_ex": 0.24373706768649497,
+    "GPBoost_ex": 0.24610314562305732,
+    "XGBoost_geo": 0.2587368737134296
+  },
+  "SAMBoost_ex_vs_GPBoost_ex": {
+    "mean": -0.0023709003006628254,
+    "ci": [
+      -0.004207374065534847,
+      -0.00053201956204324
+    ],
+    "p_samboost_better": 0.9942,
+    "verdict": "SAMBoost better"
+  },
+  "SAMBoost_ex_vs_XGBoost_geo": {
+    "mean": -0.01500326446339238,
+    "ci": [
+      -0.01792248933142136,
+      -0.012116475898688427
+    ],
+    "p_samboost_better": 1.0,
+    "verdict": "SAMBoost better"
+  }
+}

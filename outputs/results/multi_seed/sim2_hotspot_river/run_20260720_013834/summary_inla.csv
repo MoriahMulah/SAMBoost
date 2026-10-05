@@ -1,0 +1,2 @@
+"Method","n_seeds","r_spatial_mean","r_spatial_std","rmse_spatial_mean","rmse_spatial_std","r_cov_mean","r_cov_std","rmse_cov_mean","rmse_cov_std","fit_time_mean","fit_time_std"
+"INLA_hybrid",30,0.9467,0.0158,0.2071,0.0693,0.625,0.0201,0.5932,0.0319,72.537,25.7112

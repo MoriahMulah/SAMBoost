@@ -1,0 +1,19 @@
+{
+  "m_r": 0.5,
+  "m_s": 0.5,
+  "range0": 7861.9656,
+  "sigma0": 0.3783,
+  "spline_knots": {
+    "age": 4,
+    "TLA": 3,
+    "beds": 3,
+    "baths": 3,
+    "halfbaths": 2,
+    "frontage": 4,
+    "depth": 2,
+    "garagesqft": 3,
+    "rooms": 2,
+    "lotsize": 4
+  },
+  "n_mesh_nodes": 745
+}

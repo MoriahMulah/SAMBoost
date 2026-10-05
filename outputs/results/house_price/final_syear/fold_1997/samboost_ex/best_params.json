@@ -1,0 +1,10 @@
+{
+  "alpha": 0.2,
+  "kappa": 30.0,
+  "max_depth_stage1": 3,
+  "min_samples_leaf": 10,
+  "w_mode": "no_geo",
+  "learning_rate": 0.05,
+  "n_estimators": 800,
+  "n_freeze": 10
+}

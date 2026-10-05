@@ -1,0 +1,2 @@
+Method,n_seeds,auc_mean,auc_std,log_loss_mean,log_loss_std,brier_mean,brier_std,r_spatial_mean,r_spatial_std,rmse_spatial_mean,rmse_spatial_std,r_cov_mean,r_cov_std,rmse_cov_mean,rmse_cov_std,fit_time_mean,fit_time_std,total_run_time_mean,total_run_time_std
+XGBoost,30,0.648,0.0208,0.6746,0.0162,0.2389,0.0068,0.7212,0.0703,0.4184,0.0398,0.6815,0.0415,0.6362,0.0319,0.0457,0.015,2.369,1.607

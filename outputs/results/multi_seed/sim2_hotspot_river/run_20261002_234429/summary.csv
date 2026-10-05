@@ -1,0 +1,2 @@
+Method,n_seeds,rmse_mean,rmse_std,r2_mean,r2_std,mae_mean,mae_std,r_spatial_mean,r_spatial_std,rmse_spatial_mean,rmse_spatial_std,r_cov_mean,r_cov_std,rmse_cov_mean,rmse_cov_std,fit_time_mean,fit_time_std,total_run_time_mean,total_run_time_std
+XGBoost,30,0.6348,0.0199,0.538,0.0206,0.4979,0.0144,0.8911,0.0241,0.2148,0.0189,0.8753,0.0114,0.357,0.0197,0.039,0.0179,2.4163,1.9278

@@ -1,0 +1,2 @@
+Method,n_seeds,rmse_mean,rmse_std,r2_mean,r2_std,mae_mean,mae_std,r_spatial_mean,r_spatial_std,rmse_spatial_mean,rmse_spatial_std,r_cov_mean,r_cov_std,rmse_cov_mean,rmse_cov_std,fit_time_mean,fit_time_std,total_run_time_mean,total_run_time_std
+SAMBoost,30,0.5665,0.0134,0.6266,0.0235,0.449,0.0094,0.9387,0.0228,0.1585,0.0194,0.9309,0.0111,0.2593,0.0214,6.013,1.2109,40.7193,29.1066

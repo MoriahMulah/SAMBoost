@@ -1,0 +1,4 @@
+Method,n_seeds,auc_mean,auc_std,log_loss_mean,log_loss_std,brier_mean,brier_std,r_spatial_mean,r_spatial_std,rmse_spatial_mean,rmse_spatial_std,r_cov_mean,r_cov_std,rmse_cov_mean,rmse_cov_std,fit_time_mean,fit_time_std,total_run_time_mean,total_run_time_std
+SAMBoost,30,0.6893,0.0205,0.6367,0.0116,0.223,0.0053,0.9509,0.0215,0.2205,0.0347,0.7489,0.0397,0.4757,0.0335,0.7783,0.3972,17.8127,10.5456
+GPBoost,30,0.6779,0.0213,0.6447,0.0108,0.2267,0.005,0.9255,0.0268,0.2685,0.0367,0.7074,0.0568,0.5573,0.0651,80.7143,49.6976,306.9133,449.1931
+XGBoost,30,0.6419,0.0178,0.6764,0.0029,0.2417,0.0014,0.5341,0.1154,0.5728,0.0124,0.7494,0.0369,0.6045,0.029,0.2707,0.7953,6.213,6.6955

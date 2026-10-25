@@ -1,10 +1,32 @@
 # SAMBoost
 
+## Abstract
+
+We propose SAMBoost (Spatially Aware Mesh Boosting), a gradient boosting method that
+combines tree-based covariate modelling with a stochastic partial differential
+equation (SPDE) latent spatial field through a single penalised objective. At each
+boosting iteration, the predictor is decomposed into separate covariate and spatial
+components. The method is motivated by applications in which the spatial effect is not
+a nuisance to be removed but a quantity of interest that must be recovered alongside
+the covariates. In insurance, for example, practitioners need both flexible nonlinear
+covariate effects and an interpretable geographic risk surface that can be reported on
+its own. Existing approaches often involve trade-offs, offering flexible covariate
+modelling but no explicit spatial field, rigorous spatial inference with a fixed
+additive covariate structure, or a combination of both at computational costs that
+limit practicality for large datasets. SAMBoost addresses these goals within the
+boosting loop, and the underlying mesh produces a sparse precision structure whose
+cost is largely independent of sample size. On simulations and on an open benchmark,
+SAMBoost matches or improves on the predictive accuracy of joint Gaussian process and
+tree boosting approaches. It is also faster and recovers the spatial field and
+covariate effects more accurately. When covariate effects include interactions, it
+outperforms additive Bayesian spatial models. Applied to a flood insurance portfolio
+with 4.9 million records, SAMBoost trains on the full training set without subsampling
+and runs about sixteen times faster than a Bayesian reference, with a consistent
+spatial risk surface.
+
 SAMBoost is a spatial gradient boosting method. Gradient-boosted trees model the
 effect of the covariates, and a Gaussian Markov random field built on a triangular
-mesh (SPDE approach) models the spatial effect. The two components are estimated
-jointly but kept separate, so a spatially structured covariate is not absorbed by
-the spatial field (spatial confounding).
+mesh (SPDE approach) models the spatial effect.
 
 This repository contains the code and results of the accompanying paper: the
 simulation study, the house-price application and the fit-time scaling study. The
@@ -29,6 +51,11 @@ insurance application of the paper uses confidential data and is not included.
   an XGBoost tree backend, exposure weights, early stopping and intercept
   recalibration (used for the insurance application). With default settings it gives
   the same results as the two models above.
+
+The model classes contain more options than the method described in the paper:
+multi-resolution spatial fields (`n_levels > 1`), additional step-size modes for the
+spatial update (`w_mode`), an iterative solver and other experimental settings. They
+come from earlier tests and ongoing work. The scripts set the arguments explicitly.
 
 ## Simulation study
 

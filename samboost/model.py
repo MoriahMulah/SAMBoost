@@ -552,8 +552,6 @@ class SAMBoost(BaseEstimator, ClassifierMixin):
         Bounds:
             alpha -> 0:  eta* -> 1.0   (no regularisation: full step)
             alpha -> inf: eta* -> 0.5  (strong regularisation: half step)
-
-        Cost: O(N + M) - one sparse mat-vec (Q*dz) + two dot products.
         """
         A_dz      = np.asarray(self.A @ delta_z).ravel()
         data_term = float(np.dot(hess2 * A_dz, A_dz))                    # b
